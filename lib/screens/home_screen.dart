@@ -79,21 +79,6 @@ class HomeScreen extends StatelessWidget {
                 height: 300,
               ),
             ),
-            // Practice button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const PracticeScreen()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                textStyle: const TextStyle(fontSize: 18),
-              ),
-              child: const Text('Practice Letters to Numbers'),
-            ),
-            const SizedBox(height: 20),
             // Encode button
             ElevatedButton(
               onPressed: () {
@@ -107,6 +92,21 @@ class HomeScreen extends StatelessWidget {
                 textStyle: const TextStyle(fontSize: 18),
               ),
               child: const Text('Encode Number'),
+            ),
+            const SizedBox(height: 20),
+            // Practice button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PracticeScreen()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                textStyle: const TextStyle(fontSize: 18),
+              ),
+              child: const Text('Practice Letters to Numbers'),
             ),
             const SizedBox(height: 20),
             // Reference chart button
